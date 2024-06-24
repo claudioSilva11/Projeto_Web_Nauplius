@@ -1,5 +1,5 @@
 #cabecalho {
-    background-color: #00487c;
+    background-color: #00487c !important; 
 }
 
 #titulo-cabecalho {
@@ -23,7 +23,7 @@
 #upload-btn {
     width: 100%; /* Ajusta a largura do botão para 100% do contêiner pai */
     padding: 10px;
-    background-color: #007bff;
+    background-color: #00487c;
     color: #fff;
     border: none;
     cursor: pointer;
