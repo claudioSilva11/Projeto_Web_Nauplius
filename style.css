@@ -20,7 +20,7 @@
     height: 200px; /* Altura fixa para a demonstração */
 }
 
-#upload-btn {
+.botao {
     width: 100%; /* Ajusta a largura do botão para 100% do contêiner pai */
     padding: 10px;
     background-color: #00487c;
@@ -32,10 +32,13 @@
     margin-top: 10px; /* Espaçamento entre o conteúdo da div e o botão */
 }
 
-#upload-btn:hover {
+.botao:hover {
     background-color: #0056b3; /* Cor do botão ao passar o mouse */
 }
 
+#resetButtonId {
+    background-color: red;
+}
 main {
     display: flex;
     flex-direction: column; /* Organiza o conteúdo em coluna */

@@ -16,15 +16,21 @@ inputFile.addEventListener("change", function (e) {
             upload_imagem.style.backgroundPosition = "center";
             upload_imagem.style.backgroundRepeat = "no-repeat";
             mensagem.innerHTML = "Imagem Carregada";
+
             const submitButton = document.createElement("button");
             submitButton.type = "submit";
-            submitButton.textContent = "Enviar";
-            submitButton.className = "btn btn-submit";
+            submitButton.textContent = "Realizar contagem";
+            submitButton.className = "botao botaoAdicionadoDinamicamente";
 
             const resetButton = document.createElement("button");
             resetButton.type = "reset";
-            resetButton.textContent = "Cancelar";
-            resetButton.className = "btn btn-reset";
+            resetButton.textContent = "Voltar";
+            resetButton.className = "botao botaoAdicionadoDinamicamente";
+            resetButton.id = "resetButtonId";
+
+            resetButton.addEventListener('click', () => {
+                resetForm()
+            });
 
             upload_imagem.appendChild(submitButton);
             upload_imagem.appendChild(resetButton);
@@ -38,3 +44,17 @@ inputFile.addEventListener("change", function (e) {
         mensagem.innerHTML = "Realize contagem de Nauplios em segundos";
     }
 });
+
+function resetForm() {
+    upload_imagem.style.backgroundImage = "";
+    mensagem.innerHTML = "Realize contagem de Nauplios em segundos";
+
+    // Remover apenas os elementos adicionados dinamicamente
+    const dynamicElements = upload_imagem.querySelectorAll('.botaoAdicionadoDinamicamente');
+    dynamicElements.forEach(element => {
+        upload_imagem.removeChild(element);
+    });
+
+    document.querySelector("#upload-btn").style.visibility = "visible";
+}
+
