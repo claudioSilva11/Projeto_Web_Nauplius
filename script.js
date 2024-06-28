@@ -12,7 +12,7 @@ inputFile.addEventListener("change", function (e) {
         reader.addEventListener("load", function (e) {
             const readerTarget = e.target;
             upload_imagem.style.backgroundImage = `url("${readerTarget.result}")`;
-            upload_imagem.style.backgroundSize = "cover";
+            upload_imagem.style.backgroundSize = "contain";
             upload_imagem.style.backgroundPosition = "center";
             upload_imagem.style.backgroundRepeat = "no-repeat";
             mensagem.innerHTML = "Imagem Carregada";

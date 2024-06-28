@@ -18,12 +18,12 @@
     background-color: #f0f0f0;
     padding: 20px;
     border: 1px solid #ccc;
-    width: 300px; /* Ajuste conforme necessário */
+    width: 600px; 
     margin: 0 auto; /* Centraliza a div na página */
     display: flex;
     flex-direction: column;
     justify-content: flex-end; /* Move o botão para a parte inferior */
-    height: 200px; /* Altura fixa para a demonstração */
+    height: 500px; 
 }
 
 .botao {
@@ -33,7 +33,7 @@
     color: #fff;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 0.9em;
     text-align: center;
     margin-top: 10px; /* Espaçamento entre o conteúdo da div e o botão */
 }
@@ -57,3 +57,40 @@ main {
 #picture__input {
     display: none;
 }
+
+
+@media (max-width: 1200px) {
+    #upload-imagem {
+        width: 60vw;
+        height: 50vw;
+    }
+}
+
+/* @media (max-width: 1050px) {
+    #upload-imagem {
+        width: 0vw;
+        height: 60vw;
+    }
+} */
+
+@media (max-width: 1050px) {
+    #upload-imagem {
+        width: 70vw;
+        height: 60vw;
+    }
+}
+
+@media (max-width: 850px) {
+    #upload-imagem {
+        width: 80vw;
+        height: 70vw;
+    }
+}
+
+@media (max-width: 750px) {
+    #upload-imagem {
+        width: 90vw;
+        height: 80vw;
+    }
+}
+
