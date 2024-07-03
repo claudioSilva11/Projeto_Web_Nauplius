@@ -9,19 +9,25 @@ body{
 }
 
 #cabecalho {
-    background-color: #00487c !important; 
-    margin-bottom: 50px;
+    background-color: #00487c !important;
+    margin-bottom: 50px; 
 }
 
-
+#mensagem{
+    text-align: center;
+}
 #titulo-cabecalho {
     color: white;
     font-weight: bold;
 }
 
 #upload-imagem {
-    /* Estilize sua div como desejar */
-    background-color: #f0f0f0;
+    background-image: url('m4.jpg'); /* Caminho para a imagem */
+    background-size: contain; /* Ajusta a imagem para cobrir toda a div */
+    background-position: center; /* Centraliza a imagem na div */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+
+    /* background-color: #f0f0f0; */
     padding: 20px;
     border: 1px solid #ccc;
     width: 600px; 
@@ -48,20 +54,22 @@ body{
     background-color: #0056b3; /* Cor do botão ao passar o mouse */
 }
 
-#resetButtonId{
+#botaoVoltar{
     background-color: red;
 }
 
-#resetButtonId:hover {
+#botaoVoltar:hover{
     background-color:rgb(247, 22, 22)
 }
 
 main {
-     display: flex;
-    flex-direction: column; 
+    display: flex;
+    flex-direction: row;
+    gap: 50px; 
     justify-content: center; 
     align-items: center; 
     height: 100vh; 
+    margin: 0 20px;
 }  
 
 
@@ -70,7 +78,10 @@ main {
     display: none;
 }
 
-
+.botao-container {
+    display: flex;
+    gap: 10px;
+}
 
 @media (max-width: 1200px) {
     #upload-imagem {
@@ -93,17 +104,31 @@ main {
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 950px) {
     #upload-imagem {
-        width: 80vw;
-        height: 70vw;
+        width: 60vw;
+        height: 50vw;
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 650px) {
     #upload-imagem {
-        width: 90vw;
-        height: 80vw;
+        width: 50vw;
+        height: 40vw;
     }
+}
+
+@media (max-width: 575px) {
+    #upload-imagem {
+        width: 60vw;
+        height: 50vw;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content:right;
+        align-items:normal;
+    }  
+
 }
 

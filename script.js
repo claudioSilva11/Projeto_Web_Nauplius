@@ -58,3 +58,5 @@ function resetForm() {
     document.querySelector("#upload-btn").style.visibility = "visible";
 }
 
+
+
