@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+#main {
+    display: flex;
+    flex-direction: row;
+    /* gap: 0px;  */
+    justify-content: center; 
+    /* align-items: center;  */
+    height: 100vh; 
+    /* margin: 0 20px; */
+}
+
+#logo {
+    width:200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#lado-esquerdo{
+    background-color: #00487c;
+    color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 50%;
+
+}
+
+#lado-direito {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#subtitulo {
+    margin-top: 30px;
+    font-size: 25px;
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#titulo {
+    font-size: 60px;
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* #formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+#campos-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-align: right;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#botao-entrar {
+   
+}
+
+.button-container-entrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.button-container-google{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.campo{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+}
+
+.botao {
+    padding: 3px 30px;
+    border-radius: 3px;
+    
+}
+
+input{
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
